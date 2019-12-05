@@ -23,11 +23,11 @@ all:
 	head -c 16 part.nes > part.bin; \
 	tail -c +17 part.gb | head -c 96 >> part.bin; \
 	head -c 4 part.html >> part.bin; \
-	head -c 52 part.pdf >> part.bin; \
-	tail -c +169 part.gb | head -c 168 >> part.bin; \
+	head -c 50 part.pdf >> part.bin; \
+	tail -c +167 part.gb | head -c 170 >> part.bin; \
 	tail -c +5 part.html | head -c -3 >> part.bin; \
-	tail -c +52 part.pdf >> part.bin; \
-	tail -c +2003 part.gb | head -c 558 >> part.bin; \
+	tail -c +50 part.pdf >> part.bin; \
+	tail -c +2006 part.gb | head -c 555 >> part.bin; \
 	tail -c +2561 part.nes | head -c 512 >> part.bin; \
 	cat part.zip >> part.bin; \
 	zip -F part.bin --out final.bin; \

@@ -56,7 +56,7 @@ Your zip file extractor should be able to extract this file, although you may ha
 
 - Ange Albertini
 - Evan Sultanik
-- Evan Taren
+- Evan Teran
 
 A special thanks to these three individuals for inspiring me to see what I can do with file formats and polyglot files.
 

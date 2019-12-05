@@ -37,7 +37,7 @@ InitializePPU:
   tax
   ldy #$10
 InitializePPULoop:
-  sta PPU_STATUS
+  sta PPU_DATA
   dex
   bne InitializePPULoop
     dey
