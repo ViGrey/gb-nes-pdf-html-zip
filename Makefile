@@ -15,7 +15,7 @@ all:
 	cd $(CURRENTDIR)src/nes; \
 	asm $(PKG_NAME).asm ../../build/part.nes; \
 	cd $(CURRENTDIR)build; \
-	echo -e "This ZIP File is also a Gameboy ROM, an NES ROM, a PDF File, and an HTML File and contains its own source code\r\n\r\n(C) 2019 - Vi Grey\r\nvigrey.com\r\n@ViGreyTech\r\n." | zip -z -r part.zip gb-nes-pdf-html-zip; \
+	echo -e "This ZIP File is also a Gameboy ROM, an NES ROM, a PDF File, and an HTML File and contains its own source code\r\n\r\n(C) 2019 - Vi Grey\r\nvigrey.com\r\n@ViGreyTech\r\n." | zip -z -r part.zip $(PKG_NAME); \
 	cd $(CURRENTDIR); \
 	cp $(CURRENTDIR)src/pdf/part.pdf build; \
 	cp $(CURRENTDIR)src/html/part.html build; \
