@@ -24,10 +24,10 @@ all:
 	tail -c +17 part.gb | head -c 96 >> part.bin; \
 	head -c 4 part.html >> part.bin; \
 	head -c 38 part.pdf >> part.bin; \
-	tail -c +167 part.gb | head -c 170 >> part.bin; \
+	tail -c +155 part.gb | head -c 182 >> part.bin; \
 	tail -c +5 part.html | head -c -3 >> part.bin; \
 	tail -c +38 part.pdf >> part.bin; \
-	tail -c +1989 part.gb | head -c 572 >> part.bin; \
+	tail -c +2001 part.gb | head -c 560 >> part.bin; \
 	tail -c +2561 part.nes | head -c 512 >> part.bin; \
 	cat part.zip >> part.bin; \
 	zip -F part.bin --out final.bin; \
